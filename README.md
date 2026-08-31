@@ -18,11 +18,11 @@ The calculator accepts the following user inputs:
 
 The simple interest is calculated using:
 
-Simple Interest = (Principal × Rate × Time) / 100
+**Simple Interest = (Principal × Rate × Time) / 100**
 
 or:
 
-SI = (P × R × T) / 100
+**SI = (P × R × T) / 100**
 
 ## Output
 
@@ -32,13 +32,13 @@ The calculator displays the calculated simple interest based on the values enter
 
 If:
 
-Principal = 1000  
-Rate = 5  
-Time = 2 years
+- Principal = 1000
+- Rate = 5
+- Time = 2 years
 
 Then:
 
-Simple Interest = (1000 × 5 × 2) / 100 = 100
+**Simple Interest = (1000 × 5 × 2) / 100 = 100**
 
 ## How to Run
 
