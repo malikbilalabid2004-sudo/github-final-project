@@ -13,3 +13,6 @@ A calculator that calculates simple interest given principal, annual rate of int
     `
 
 © 2022 XYZ, Inc.
+## Contribution
+
+Contributions and improvements are welcome.
