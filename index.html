@@ -28,6 +28,7 @@
     with our travel recommendations.
   </p>
 
+  <!-- BEACHES -->
   <div id="beachSection">
 
     <h2>Beach Recommendations</h2>
@@ -44,7 +45,8 @@
 
   </div>
 
-  <div id="otherContent">
+  <!-- TEMPLES -->
+  <div id="templeSection">
 
     <h2>Temple Recommendations</h2>
 
@@ -58,34 +60,66 @@
          width="400"
          alt="Beautiful Temple">
 
+  </div>
+
+  <!-- COUNTRIES -->
+  <div id="countrySection">
+
     <h2>Country Recommendations</h2>
 
-    <h3>Beautiful Country</h3>
-    <p>
-      Explore amazing places, cultures, food, and landscapes around the world.
-    </p>
+    <h3>Pakistan</h3>
+    <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5"
+         width="400"
+         alt="Pakistan">
+
+    <h3>Japan</h3>
+    <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186"
+         width="400"
+         alt="Japan">
 
   </div>
 
   <script>
+
     function searchDestination() {
 
       let search = document.getElementById("searchInput").value.toLowerCase();
 
+      document.getElementById("beachSection").style.display = "none";
+      document.getElementById("templeSection").style.display = "none";
+      document.getElementById("countrySection").style.display = "none";
+
       if (search.includes("beach")) {
+
         document.getElementById("beachSection").style.display = "block";
-        document.getElementById("otherContent").style.display = "none";
+
+      } else if (search.includes("temple")) {
+
+        document.getElementById("templeSection").style.display = "block";
+
+      } else if (search.includes("country")) {
+
+        document.getElementById("countrySection").style.display = "block";
+
       } else {
-        document.getElementById("beachSection").style.display = "none";
-        document.getElementById("otherContent").style.display = "block";
+
+        document.getElementById("beachSection").style.display = "block";
+        document.getElementById("templeSection").style.display = "block";
+        document.getElementById("countrySection").style.display = "block";
+
       }
     }
 
     function clearSearch() {
+
       document.getElementById("searchInput").value = "";
+
       document.getElementById("beachSection").style.display = "block";
-      document.getElementById("otherContent").style.display = "block";
+      document.getElementById("templeSection").style.display = "block";
+      document.getElementById("countrySection").style.display = "block";
+
     }
+
   </script>
 
 </body>
