@@ -1,0 +1,168 @@
+.app-container {
+  min-height: 100vh;
+}
+
+.landing-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 4rem 6vw;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  inset: 0;
+  background-image: url('./assets/hero-bg.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.eyebrow {
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.about-us-container {
+  max-width: 650px;
+  line-height: 1.7;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #2f6b3c;
+  color: white;
+}
+
+.btn-secondary {
+  background: #e7eee8;
+  color: #244d2d;
+}
+
+.get-started {
+  margin-top: 1.5rem;
+}
+
+.product-list,
+.cart-page {
+  padding: 2rem 6vw;
+}
+
+.product-list-intro {
+  margin-bottom: 2rem;
+}
+
+.category-section {
+  margin-bottom: 3rem;
+}
+
+.category-heading {
+  margin-bottom: 1rem;
+}
+
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.plant-card {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+.plant-thumb,
+.cart-thumb {
+  background: #f1f5f1;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.plant-svg {
+  width: 100%;
+  height: 180px;
+}
+
+.plant-footer,
+.cart-actions,
+.cart-summary-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.price-tag {
+  font-weight: 700;
+}
+
+.cart-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-ledger {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-item-name {
+  font-weight: 600;
+}
+
+.qty-btn {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.qty-value {
+  margin: 0 0.75rem;
+}
+
+.remove-btn {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.cart-actions {
+  margin-top: 2rem;
+}
+
+@media (max-width: 800px) {
+  .plant-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-row {
+    grid-template-columns: 1fr;
+  }
+}
